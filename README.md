@@ -9,6 +9,9 @@ Purpose
 Show link "ERP VARIANTS" to Product side menu.
 ![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants2.jpg)
 
+"ERP VARIANTS" show variant list. Select particular variant and edit
+![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants3.jpg)
+
 Admin can manage Maker Variant informations "Product Code(13 digits within)", "Stock" to associate as ERP Variant.
 ![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants1.jpg)
 
