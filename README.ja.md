@@ -9,6 +9,9 @@ Purpose
 商品のサイドメニューへのリンクを表示。
 ![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants2.jpg)
 
+「メーカー別情報」 - edit(種類を選択)
+![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants3.jpg)
+
 管理者は、商品に関連付けるためのメーカーの"製品コード(13桁以内)","在庫数"を管理することができます。
 ![ErpVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_erp_variants/images/erpvariants1.jpg)
 
