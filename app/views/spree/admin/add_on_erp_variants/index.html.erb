@@ -1,0 +1,38 @@
+<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => 'Add On Erp Variants'} %>
+
+<% content_for :page_title do %>
+  <%= t("add_on.listing_add_on_erp_variant") %>
+<% end %>
+
+<%= paginate @add_on_erp_variant %>
+
+<table class='index'>
+  <thead>
+    <tr>
+      <th><%= t("activerecord.attributes.variant.id") %></th>
+      <th><%= Spree.t(:options) %></th>
+      <th><%= Spree.t(:price) %></th>
+      <th><%= Spree.t(:sku) %></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% for variant in @variant %>
+      <tr class="<%= cycle('odd', 'even') %>">
+        <td class="align-center"><%= variant.id %></td>
+        <td class="align-center"><%= variant.options_text %></td>
+        <td class="align-center"><%= variant.price %></td>
+        <td class="align-center"><%= variant.sku %></td>
+
+        <% if variant.add_on_erp_variant.blank? %>
+        <td class="actions"><%= link_to t("edit"), ("/admin/products/" + params[:product_id] + "/variants/#{variant.id}/add_on_erp_variants/new") , :class => 'edit' %></td>
+        <% else %>
+        <td class="actions"><%= link_to t("edit"), ("/admin/products/" + params[:product_id] + "/variants/#{variant.id}/add_on_erp_variants/#{variant.add_on_erp_variant.id}/edit") , :class => 'edit' %></td>
+        <% end %>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>

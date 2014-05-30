@@ -1,0 +1,40 @@
+<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => 'Add On Erp Variants'} %>
+
+<% content_for :page_title do %>
+  : <%= @add_on_erp_variant.variant.sku %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <li>
+    <%= button_link_to t('add_on.back_to_product_add_on_maker_variants_list'), admin_product_add_on_erp_variants_path, :icon => 'icon-arrow-left' %>
+  </li>  
+<% end %>
+
+<%= form_for [:admin, @product, @variant, @add_on_erp_variant], url: admin_product_variant_add_on_erp_variant_path(:variant_id => params[:variant_id], :id => params[:id]) do |f| %>
+  <div data-hook="admin_inside_add_on_erp_variant_form" class="row">
+    <div class='alpha six columns'>
+      <div class='field'>
+    <%= f.field_container :erp_product_code do %>
+          <%= f.label :erp_product_code, t('activerecord.attributes.add_on_erp_variant.erp_product_code') %><br />
+          <%= f.text_field :erp_product_code, :class => 'fullwidth' %>
+          <%= f.error_message_on :erp_product_code %>
+    <% end %>
+      </div>
+      <div class='field'>
+    <%= f.field_container :stock do %>
+        <%= f.label :stock, t('activerecord.attributes.add_on_erp_variant.stock') %>
+        <%= f.text_field :stock, :class => 'fullwidth' %>
+        <%= f.error_message_on :stock %>
+    <% end %>
+      </div>
+    </div>
+
+    </div>
+
+
+      <%= f.submit %>
+
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+en:
+  add_on:
+    add_on_erp_variant: ERP Variant
+    add_on_erp_variants: ERP Variants
+    listing_add_on_erp_variant: Listing ERP Variants
+    new_add_on_erp_variant: New ERP Variant
+    edit_add_on_erp_variant: Edit ERP Variant
+    destroy: Destroy
+    add_one: Add One
+    back_to_add_on_erp_variants_list: Back To ERP Variants List
+    back_to_product_add_on_erp_variants_list: Back To ERP Variants List
+    notice_messages:
+      admin_product_variant_add_on_maker_variant_created: ERP Variant has been successfully created!
+      admin_product_variant_add_on_maker_variant_updated: ERP Variant has been successfully updated!
+      admin_product_variant_add_on_maker_variant_has_error: Cannnot save for invalid data.
+  activerecord:
+    attributes:
+      add_on_erp_variant:
+        variant_id: Variant ID
+        erp_product_code: Product Code in ERP
+        stock: Stock in ERP

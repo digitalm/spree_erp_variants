@@ -1,0 +1,20 @@
+ja:
+  add_on:
+    add_on_erp_variant: 販売ソフト別情報
+    listing_add_on_erp_variant: 販売ソフト別情報一覧
+    new_add_on_erp_variant: 新規
+    edit_add_on_erp_variant: 編集
+    destroy: 削除
+    add_one: 新規追加
+    back_to_add_on_erp_variants_list: 登録済販売ソフト別情報一覧
+    back_to_product_add_on_erp_variants_list: 販売ソフト別情報一覧へ戻る
+    notice_messages:
+      admin_product_variant_add_on_maker_variant_created: 登録済販売ソフト別情報を作成しました
+      admin_product_variant_add_on_maker_variant_updated: 登録済販売ソフト別情報を更新しました
+      admin_product_variant_add_on_maker_variant_has_error: エラーが発生しました
+  activerecord:
+    attributes:
+      add_on_erp_variant:
+        variant_id: 種類
+        erp_product_code: 販売ソフトの商品コード
+        stock: 販売ソフトの在庫数
